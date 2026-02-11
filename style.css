@@ -124,3 +124,42 @@ footer {
     .nav-links { display: none; } /* Esconde o menu de texto em celulares muito pequenos */
     .social-icons { margin-top: 10px; }
 }
+
+/* Estilos para o Menu Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--azul-feja);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o ícone ☰ no celular */
+    }
+
+    .nav-links {
+        display: none; /* Esconde os links por padrão no celular */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostra o menu quando clicado */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        display: none; /* Esconde os ícones sociais do topo no celular para dar espaço */
+    }
+}
