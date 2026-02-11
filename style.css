@@ -114,3 +114,13 @@ footer {
     text-align: center;
     margin-top: 50px;
 }
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Esconde o menu de texto em celulares muito pequenos */
+    .social-icons { margin-top: 10px; }
+}
