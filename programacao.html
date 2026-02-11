@@ -3,79 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programação Semanal - FEJA</title>
+    <title>Programação - FEJA</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .social-icons a { color: var(--azul-feja); margin-left: 15px; font-size: 1.2rem; transition: 0.3s; }
+        .social-icons a:hover { color: var(--azul-escuro); }
+        .footer-social a { color: white; margin: 0 10px; font-size: 1.5rem; }
+    </style>
 </head>
 <body>
 
 <header>
     <nav class="container">
-        <div class="logo-area">
-            <h1>FEJA</h1>
-        </div>
+        <div class="logo-area"><div class="logo-text"><h1>FEJA</h1></div></div>
         <ul class="nav-links">
             <li><a href="index.html">Início</a></li>
             <li><a href="programacao.html">Programação</a></li>
-            <li><a href="#">História</a></li>
-            <li><a href="#">Diretoria</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="grupos-estudo.html">Estudos</a></li>
+            <li><a href="livraria.html">Livraria</a></li>
+            <li><a href="colabore.html">Colabore</a></li>
         </ul>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/joannaeangelismcz" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
     </nav>
 </header>
 
 <main class="container section">
     <h2>Programação Semanal</h2>
-    
     <div class="table-container">
         <table>
             <thead>
-                <tr>
-                    <th>DIA</th>
-                    <th>HORA</th>
-                    <th>ATIVIDADE</th>
-                </tr>
+                <tr><th>DIA</th><th>HORA</th><th>ATIVIDADE</th></tr>
             </thead>
             <tbody>
                 <tr><td>2ª Feira</td><td>18h45</td><td>Reunião Mediúnica (Privativa)</td></tr>
-                <tr><td>3ª Feira</td><td>18h50 / 19h30</td><td>Estudos Doutrinários / Palestra Pública e Fluidoterapia</td></tr>
-                <tr><td>4ª Feira</td><td>14h</td><td>Assistência Social (Gestantes)</td></tr>
-                <tr><td>4ª Feira</td><td>19h30</td><td>Estudo do Evangelho (Remoto)</td></tr>
-                <tr><td>5ª Feira</td><td>17h</td><td>Prece e Irradiação (Privativa)</td></tr>
-                <tr><td>5ª Feira</td><td>18h / 19h</td><td>Diálogo Fraterno / Fluidoterapia</td></tr>
-                <tr><td>6ª Feira</td><td>19h / 20h</td><td>Estudos Doutrinários / Palestra Pública e Fluidoterapia</td></tr>
-                <tr><td>Sábado</td><td>14h30 / 15h</td><td>Estudos Doutrinários (Presenciais)</td></tr>
-                <tr><td>1º Sábado</td><td>08h</td><td>Assistência Social (Trabalho com as Nutrizes)</td></tr>
-                <tr><td>3º Sábado</td><td>13h30</td><td>Assistência Social (Famílias Lar São Domingos)</td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h2 style="margin-top: 40px;">Livraria e Biblioteca</h2>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>LOCAL</th>
-                    <th>HORÁRIO</th>
-                    <th>DIAS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Livraria</td>
-                    <td>08h às 12h | 13h às 17h</td>
-                    <td>Segunda à Quinta</td>
-                </tr>
-                <tr>
-                    <td>Livraria</td>
-                    <td>18h30 às 21h20</td>
-                    <td>Terça e Sexta</td>
-                </tr>
-                <tr>
-                    <td>Biblioteca</td>
-                    <td>18h30 às 20h30</td>
-                    <td>Sexta-feira</td>
-                </tr>
+                <tr><td>3ª Feira</td><td>19h30</td><td>Palestra Pública e Fluidoterapia</td></tr>
+                <tr><td>4ª Feira</td><td>14h00</td><td>Assistência Social (Gestantes)</td></tr>
+                <tr><td>5ª Feira</td><td>19h00</td><td>Evangelho e Fluidoterapia</td></tr>
+                <tr><td>6ª Feira</td><td>20h00</td><td>Palestra Pública e Fluidoterapia</td></tr>
+                <tr><td>Sábado</td><td>15h00</td><td>Estudos Doutrinários</td></tr>
             </tbody>
         </table>
     </div>
@@ -83,9 +52,13 @@
 
 <footer>
     <div class="container">
-        <p>©2025 Fraternidade Espírita Joanna de Ângelis - FEJA</p>
+        <p><strong>FEJA - Maceió/AL</strong></p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/joannaeangelismcz" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.7;">©2025 FEJA. Todos os direitos reservados.</p>
     </div>
 </footer>
-
 </body>
 </html>
