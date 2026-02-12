@@ -7,11 +7,17 @@
     --texto: #333333;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     color: var(--texto);
-    margin: 0;
+    background-color: var(--branco);
 }
 
 .container {
@@ -36,15 +42,9 @@ nav {
     align-items: center;
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-}
-
 .logo-text h1 {
     font-size: 1.2rem;
     color: var(--azul-feja);
-    margin: 0;
 }
 
 .nav-links {
@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .nav-links a {
@@ -68,10 +68,21 @@ nav {
     color: var(--azul-feja);
 }
 
-/* Seções e Tabelas */
-.section {
-    padding: 40px 0;
+.menu-toggle {
+    display: none; /* Escondido no PC */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--azul-feja);
 }
+
+.social-icons a {
+    color: var(--azul-feja);
+    margin-left: 15px;
+    font-size: 1.1rem;
+}
+
+/* Seções e Tabelas */
+.section { padding: 40px 0; }
 
 h2 {
     color: var(--azul-feja);
@@ -80,31 +91,18 @@ h2 {
     margin-bottom: 20px;
 }
 
-.table-container {
-    overflow-x: auto;
-}
+.table-container { overflow-x: auto; }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background: white;
 }
 
-th {
-    background-color: var(--azul-feja);
-    color: white;
-    text-align: left;
-    padding: 12px;
-}
-
-td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
+th { background-color: var(--azul-feja); color: white; text-align: left; padding: 12px; }
+td { padding: 12px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) { background-color: #f2f2f2; }
 
 /* Rodapé */
 footer {
@@ -115,51 +113,35 @@ footer {
     margin-top: 50px;
 }
 
-.social-icons {
-    display: flex;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .nav-links { display: none; } /* Esconde o menu de texto em celulares muito pequenos */
-    .social-icons { margin-top: 10px; }
-}
-
-/* Estilos para o Menu Mobile */
-.menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--azul-feja);
-}
-
+/* RESPONSIVIDADE (CELULAR) */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Mostra o ícone ☰ no celular */
+        display: block; /* Aparece o ícone de barras */
     }
 
     .nav-links {
-        display: none; /* Esconde os links por padrão no celular */
+        display: none; /* Esconde o menu de texto */
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 100%; /* Aparece logo abaixo do header */
         left: 0;
         width: 100%;
         background: white;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         padding: 20px 0;
-        text-align: center;
     }
 
+    /* Classe que o JavaScript vai ativar */
     .nav-links.active {
-        display: flex; /* Mostra o menu quando clicado */
+        display: flex;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 15px 0;
+        text-align: center;
     }
 
     .social-icons {
-        display: none; /* Esconde os ícones sociais do topo no celular para dar espaço */
+        display: none; /* Oculta ícones do topo no celular para limpar o visual */
     }
 }
